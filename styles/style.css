@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.pp-1{
+    padding: 1rem;
+}
+
+.back{
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(8px);
+    height: 100%;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #ff0;
+    z-index: 2;
+}
+
+.pokedex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:2%
+}
+
+.pokedex > div{
+    align-items: center;
+    text-align: center;
+}
+
+.left-pokedex{
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+}
+
+.left-pokedex > .left{
+    align-items: center;
+    text-align: left;
+}
+
+.left-pokedex > .central{
+    align-items: center;
+    text-align: center;
+}
+
+.big-led{
+    border: 5px solid white;
+    padding: 42% 40%;
+    background-color: #009dd4;
+    border-radius: 50%;
+    margin-top: 1rem;
+    display: inline;
+}
+
+.led-arr{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.led-arr > div{
+    align-items: center;
+    text-align: left;
+}
+
+.lil-arr{
+    margin-top: 1rem;
+}
+
+
+.lil-led{
+    display: inline;
+    border-radius: 50%;
+    margin: .3rem;
+    padding: .05rem .6rem;
+}
+
+.red-led{
+    background-color: red;
+    border: 1px solid rgb(230, 126, 126);
+}
+
+.yellow-led{
+    background-color: #ff0;
+    border: 1px solid rgb(255, 255, 222);
+}
+
+.main-screen{
+    background-color: #f1f2d3;
+    margin: 1rem 2rem;
+    height: 50%;
+    border: 2rem solid #dedede;
+    border-radius: 1rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.poke{
+    width: 50%;
+    height: 80%;
+}

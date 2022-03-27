@@ -8,7 +8,7 @@ const fetchPokemon = () => {
             console.log(res);
             pokeImage("images/no-found.gif","images/no-found.gif")
             pokeText("Not Found")
-            document.getElementById("info").setAttribute("hidden")
+            document.getElementById("info").setAttribute("hidden",true)
         }
         else {
             return res.json();

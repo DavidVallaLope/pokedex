@@ -6,8 +6,9 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("images/no-found.gif")
+            pokeImage("images/no-found.gif","images/no-found.gif")
             pokeText("Not Found")
+            document.getElementById("info").setAttribute("hidden")
         }
         else {
             return res.json();
@@ -26,6 +27,7 @@ const fetchPokemon = () => {
             pokeStat(stats);
             pokeElement(elem);
             pokeAttacks(atck);
+            document.getElementById("info").removeAttribute("hidden");
             console.log(pokeImg);
         }
     });

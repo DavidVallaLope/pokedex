@@ -24,15 +24,39 @@
                 </div>
             </div>
             <div class="main-screen central">
-                <img class="poke" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png" alt="">
+                <img class="poke" id="pokeImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png" alt="">
+                <p id="pokemonName">Ditto</p>
             </div>
-            <div class="bottom-buttons left">
-
+            <div class="bottom-buttons central">
+                <input type="text" class="pokemonName" id="pokeName" name="pokeName" placeholder="Pokemon Name">
+                <a href="#" class="search" id="search" onclick="fetchPokemon()">Buscar</a>
             </div>
         </div>
         <div class="right-pokedex">
+            <div class="pokemon-header central">
+                <img src="#" alt=" " id="miniPokemon" class="miniPokemon" hidden>
+                <p id="miniName" hidden></p>
+            </div>
+            <div class="info central">
+                <div class="pokemon-type left">
+                    <strong><p>Type</p></strong> 
+                    <p id="listElement"></p>
+                </div>
+                <div class="pokemon-stats left">
+                    <strong><p>Stats</p></strong>
+                    <div class="list" id="list">
 
+                    </div>
+                </div>
+                <div class="pokemon-attacks left">
+                    <strong><p>Attacks</p></strong>
+                    <div class="listAttacks" id="listAttacks">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="scripts/script.js"></script>
 </html>

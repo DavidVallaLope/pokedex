@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@300&display=swap');
+
 body{
     height: 100vh;
     margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .pp-1{
@@ -23,7 +26,6 @@ body{
     width: 60%;
     height: 80%;
     transform: translate(-50%, -50%);
-    border: 5px solid #ff0;
     z-index: 2;
 }
 
@@ -43,12 +45,12 @@ body{
     grid-template-rows: 20% 50% 30%;
 }
 
-.left-pokedex > .left{
+.left{
     align-items: center;
     text-align: left;
 }
 
-.left-pokedex > .central{
+.central{
     align-items: center;
     text-align: center;
 }
@@ -95,15 +97,73 @@ body{
 }
 
 .main-screen{
-    background-color: #f1f2d3;
+    background-color: #ffffff;
     margin: 1rem 2rem;
     height: 50%;
     border: 2rem solid #dedede;
     border-radius: 1rem;
     border-bottom-left-radius: 4rem;
+    padding: 1rem;
 }
 
 .poke{
     width: 50%;
     height: 80%;
 }
+
+.miniPokemon{
+    width: 30%;
+    height: 30%;
+    margin: .3rem;
+}
+
+
+#pokemonName{
+    margin-bottom: 1rem;
+}
+
+.bottom-buttons > input{
+    border: none;
+    padding: .7rem;
+    border-radius: 2rem;
+}
+
+.bottom-buttons > input:focus(){
+    border:solid 2px gray;   
+}
+
+.bottom-buttons > .search{
+    padding: .7rem;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 2rem;
+}
+
+.right-pokedex{
+    background-color: white;
+    border-radius: 2rem;
+    height: 30rem;
+}
+
+.info{
+    overflow-y: scroll;
+    width: 80%;
+    height: 50%;
+    margin: 2rem;
+}
+
+.info::-webkit-scrollbar {
+    width: .7rem;
+}
+
+.info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+​
